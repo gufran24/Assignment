@@ -1,0 +1,28 @@
+.city{
+    border: none;
+    border-bottom:1px solid;
+}
+
+.city:after{
+    font-family: 'Font Awesome 5 ';
+    font-weight: 900; 
+    content: "\f57d";
+}
+
+ul.nav li{
+    margin: 0px 10px 0px 0px;
+}
+
+ul.nav li a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+div.filter{
+    font-size: 13px;
+}
+
+div.icons{
+    text-align: right;
+}
