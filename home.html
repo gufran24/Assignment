@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignmnet</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <input type="text" list="citylist" class="form-control city" id="input1" value=""> 
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <input type="text" list="citylist" class="form-control city" id="input2" value="">
+                </div>
+            </div>
+                <datalist id="citylist"></datalist> 
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <ul  class="nav nav-pills">
+                    <li class="active"><a  href="#bench" data-toggle="tab">BENCHMARKS</a></li>
+                    <li><a href="#trend" data-toggle="tab">TRENDS</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="tab-content clearfix col-md-12">
+                <div class="tab-pane active" id="bench">
+                   <div class="row">
+                       <div class="col-md-2 filter"><span><i class="fa fa-calendar" aria-hidden="true"></i>2016-01-01</span><i class="fas fa-arrow-right"></i><span>2016-01-31</span></span></div>
+                       <div class="col-md-2 filter"><span>40' STANDARDS DRY</span><i class="fas fa-chevron-down"></i></div>
+                       <div class="col-md-2 filter"><span>LONG TERM -3 MONTH</span><i class="fas fa-chevron-down"></i></div>
+                       <div class="col-md-2 filter">THC INCLUDED NONE<i class="fas fa-chevron-down"></i></div>
+                       <div class="col-md-3 icons">
+                           <i class="fas fa-share"></i>
+                           <i class="fas fa-file-image"></i>
+                           <i class="fas fa-file-excel"></i>
+                           <i class="far fa-bookmark"></i>
+                        </div>
+                   </div>
+
+                   <div class="row">
+                        <div class="col-md-9">
+                            <canvas id="myChart" style="width:100%"></canvas>
+                        </div>
+                        <div class="col-md-3">
+                            <div><p>83 datapoint LA</p></div>
+                            <div>
+                                <p>Market Position</p>
+                                <p>80+ Contracts</p>
+                                <div>
+                                    <input type="radio" id="high" name="dataset" value="high">
+                                    <label for="high"> Market high</label><br>
+                                    <input type="radio" id="mean" name="dataset" value="mean">
+                                    <label for="mean"> Market Average</label><br>
+                                    <input type="radio" id="low" name="dataset" value="low">
+                                    <label for="low"> Market Low</label><br><br>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+
+                </div>
+                
+                <div class="tab-pane" id="trend">
+                    <h3></h3>
+                </div>
+            </div>
+        </div>
+     </div>   
+</body>
+</html>
